@@ -13,7 +13,12 @@ class _HomePageState extends State<HomePage> {
         title: Text("Horizontal & Vertical ListView"),
         backgroundColor: Colors.green[700],
       ),
-      body: Container(),
+      body: ListView.builder(
+        itemCount: 10,
+        itemBuilder: (context, index) => ListTile(
+          title: Text("Okay"),
+        ),
+      ),
     );
   }
 }
